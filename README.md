@@ -22,9 +22,9 @@ openGLES 2.0 Programmers Guide 2008, Raspberry Pi code port: http://benosteen.wo
 
 Chris Cummings' My Robot Blog http://robotblogging.blogspot.co.uk/2013/10/pi-eyes-stage-1.html
 
-drhastings' robots: http://www.youtube.com/user/drhastings90
-
-and videos: https://github.com/drhastings/balance
+drhastings' robots: https://github.com/drhastings/balance
+  
+and videos: http://www.youtube.com/user/drhastings90
 
 okay so I lifted the code, so blame me not them....
 

@@ -18,9 +18,7 @@ created in conjunction with these excellent resources:
 
 openGL tutorials 1-5: http://www.opengl-tutorial.org/
 
-openGLES 2.0 Programmers Guide 2008 
-
-Raspberry Pi code port: http://benosteen.wordpress.com/2012/04/27/using-opengl-es-2-0-on-the-raspberry-pi-without-x-windows/
+openGLES 2.0 Programmers Guide 2008, Raspberry Pi code port: http://benosteen.wordpress.com/2012/04/27/using-opengl-es-2-0-on-the-raspberry-pi-without-x-windows/
 
 Chris Cummings' My Robot Blog http://robotblogging.blogspot.co.uk/2013/10/pi-eyes-stage-1.html
 

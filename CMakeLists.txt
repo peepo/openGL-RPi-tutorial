@@ -139,23 +139,8 @@ target_link_libraries(../tutorial05_textured_cube/tutorial05_textured_cube
         ${GL_LIBS}
 )
 
-# Tutorial 5 working directory: copy of 05_tex with encode, then mixing in 6
-add_executable(../tutorial05_tex_cam/tutorial05_tex_cam
-    tutorial05_tex_cam/tutorial05.cpp
-    common/startScreen.cpp
-    common/LoadShaders.cpp
-    common/LoadShaders.h
-    common/texture.cpp
-    common/texture.h
-)
-target_link_libraries(../tutorial05_tex_cam/tutorial05_tex_cam
-        ${RPi_LIBS}
-        ${GL_LIBS}
-        ${ILC_LIBS}
-)
-set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
 
-# Tutorial 5  use camera as texture Chris Cummings
+# Tutorial 5 generate YUV texture
 add_executable(../tutorial05_gen_YUV_tex_disp/tutorial05_gen_YUV_tex_disp
     tutorial05_gen_YUV_tex_disp/tutorial05.cpp
     common/camera.cpp
@@ -168,11 +153,11 @@ target_link_libraries(../tutorial05_gen_YUV_tex_disp/tutorial05_gen_YUV_tex_disp
         ${CAM_LIBS}
 )
 
-# Tutorial 6  use camera as texture Chris Cummings
+# Tutorial 6 use camera as texture Chris Cummings
 add_executable(../tutorial06_tex_cam/tutorial06_tex_cam
     tutorial06_tex_cam/tutorial06.cpp
     common/camera.cpp
-    common/cameracontrol.cpp 
+    common/cameracontrol.cpp
     common/graphics.cpp
     #common/startScreen.cpp
     #common/LoadShaders.cpp
@@ -184,23 +169,8 @@ target_link_libraries(../tutorial06_tex_cam/tutorial06_tex_cam
         ${CAM_LIBS}
 )
 
-# Tutorial 6  use camera as texture Chris Cummings
-add_executable(../tutorial06_tex_cam2/tutorial06_tex_cam
-    tutorial06_tex_cam2/tutorial06.cpp
-    common/camera.cpp
-    common/cameracontrol.cpp
-    common/graphics2.cpp
-    #common/startScreen.cpp
-    #common/LoadShaders.cpp
-    #common/LoadShaders.h
-)
-target_link_libraries(../tutorial06_tex_cam2/tutorial06_tex_cam
-        ${RPi_LIBS}
-        ${GL_LIBS}
-        ${CAM_LIBS}
-)
 
-# Tutorial encode video
+# Tutorial encode YUV
 add_executable(../encode/encode
     encode/encode.c
 )
@@ -225,9 +195,9 @@ set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
 
 # Tutorial decode camera YUV video, transform to RGBA, apply matrix in OGL, then transform to YUV and encode to .h264
 add_executable(../encode_OGL/encode
-    encode_OGL/src/encode.c 
-    encode_OGL/src/video.c 
-    encode_OGL/src/matrix.c 
+    encode_OGL/src/encode.c
+    encode_OGL/src/video.c
+    encode_OGL/src/matrix.c
     encode_OGL/src/ogl.c
     encode_OGL/main.c
 )
@@ -239,6 +209,5 @@ target_link_libraries(../encode_OGL/encode
         ${ILC_LIBS}
 )
 set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
-
 
 # Tutorial 7

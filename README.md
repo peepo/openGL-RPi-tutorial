@@ -1,6 +1,10 @@
 openGLES 2.0 tutorial for Raspberry Pi
 
-sudo apt-get install cmake
+sudo apt-get install git cmake
+
+git clone https://github.com/raspberrypi/userland.git
+
+git clone https://github.com/peepo/openGL-RPi-tutorial.git
 
 cd build
 
@@ -8,9 +12,7 @@ cmake ../
 
 make
 
-start with tutorial01 to 06 then encode, and finally encode_OGL
-
-please send comments, and report bugs to the current maintainer: Jonathan Chetwynd
+start with tutorial01 to 06 then encode, and finally encode_OGLplease send comments, and report bugs to the current maintainer: Jonathan Chetwynd
 
 jay@peepo.com
 

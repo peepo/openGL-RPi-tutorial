@@ -1,6 +1,6 @@
 openGLES 2.0 tutorial for Raspberry Pi
 
-sudo apt-get install git cmake
+sudo apt-get install git cmake libglm-dev
 
 git clone https://github.com/raspberrypi/userland.git
 

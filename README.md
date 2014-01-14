@@ -4,15 +4,31 @@ sudo apt-get install git cmake libglm-dev
 
 git clone https://github.com/raspberrypi/userland.git
 
-sudo mv userland /opt/vc
-
 git clone https://github.com/peepo/openGL-RPi-tutorial.git
+
+cd userland
+
+mkdir build
 
 cd build
 
 cmake ../
 
 make
+
+sudo mv userland /opt/vc
+
+cd ~/openGL-RPi-tutorial/build
+
+cmake ../
+
+make
+
+cd ../tutorial01_first_screen/
+
+./tutorial01_first_screen
+
+---
 
 start with tutorial01 to 06 then encode, and finally encode_OGL please send comments, and report bugs to the current maintainer: Jonathan Chetwynd
 

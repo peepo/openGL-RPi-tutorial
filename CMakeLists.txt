@@ -7,6 +7,7 @@ SET(COMPILE_DEFINITIONS -Werror)
 include_directories(
     /opt/vc/include
     /opt/vc/include/interface/vcos/pthreads
+    /opt/vc/include/interface/vmcs_host/linux
     /opt/vc/userland
     /opt/vc/userland/interface/vcos
     /opt/vc/userland/interface/vcos/pthreads

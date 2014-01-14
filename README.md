@@ -16,9 +16,11 @@ cmake ../
 
 make
 
+cd ../../
+
 sudo mv userland /opt/vc
 
-cd ~/openGL-RPi-tutorial/build
+cd openGL-RPi-tutorial/build
 
 cmake ../
 

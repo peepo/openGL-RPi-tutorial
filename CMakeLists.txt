@@ -171,6 +171,18 @@ target_link_libraries(../tutorial06_tex_cam/tutorial06_tex_cam
         ${CAM_LIBS}
 )
 
+# Tutorial 7 obj model loader
+add_executable(../tutorial07_model_loading/tutorial07_model_loading
+    tutorial07_model_loading/tutorial07.cpp
+    common/objloader.cpp
+    common/startScreen.cpp
+    common/LoadShaders.cpp
+    common/texture.cpp
+)
+target_link_libraries(../tutorial07_model_loading/tutorial07_model_loading
+        ${RPi_LIBS}
+        ${GL_LIBS}
+)
 
 # Tutorial encode YUV
 add_executable(../encode/encode

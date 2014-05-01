@@ -2,23 +2,7 @@ openGLES 2.0 tutorial for Raspberry Pi
 
 sudo apt-get install git cmake libglm-dev
 
-git clone https://github.com/raspberrypi/userland.git
-
 git clone https://github.com/peepo/openGL-RPi-tutorial.git
-
-cd userland
-
-mkdir build
-
-cd build
-
-cmake ../
-
-make
-
-cd ../../
-
-sudo mv userland /opt/vc
 
 cd openGL-RPi-tutorial/build
 

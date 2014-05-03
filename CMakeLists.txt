@@ -8,8 +8,11 @@ include_directories(
     /opt/vc/include
     /opt/vc/include/interface/vcos/pthreads
     /opt/vc/include/interface/vmcs_host/linux
-    ../libs/ilclient
-    .
+<<<<<<< HEAD
+=======
+    ${CMAKE_SOURCE_DIR}/libs/glm/
+    ${CMAKE_SOURCE_DIR}/libs/ilclient
+>>>>>>> d40b8e62d2151c51ed796c21e32be4903d18f949
 )
 
 set(RPi_LIBS
@@ -37,6 +40,7 @@ set(ILC_LIBS
     openmaxil
 )
 
+<<<<<<< HEAD
 link_directories(../libs/ilclient /opt/vc/lib)
 
 # Tutorial 1
@@ -220,3 +224,21 @@ target_link_libraries(../encode_OGL/encode
 set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
 
 # Tutorial 7
+=======
+link_directories(${CMAKE_SOURCE_DIR}/libs/ilclient /opt/vc/lib)
+
+# subdirectories
+add_subdirectory(playground)
+add_subdirectory(tutorial01_first_screen)
+add_subdirectory(tutorial02_red_triangle)
+add_subdirectory(tutorial02a_modelspace)
+add_subdirectory(tutorial03_matrices)
+add_subdirectory(tutorial04_coloured_cube)
+add_subdirectory(tutorial05_tex)
+add_subdirectory(tutorial05_textured_cube)
+add_subdirectory(tutorial05_gen_YUV_tex_disp)
+add_subdirectory(tutorial06_tex_cam)
+add_subdirectory(encode)
+add_subdirectory(encode_main)
+add_subdirectory(encode_OGL)
+>>>>>>> d40b8e62d2151c51ed796c21e32be4903d18f949

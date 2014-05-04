@@ -1,10 +1,8 @@
 add_executable(tutorial02_red_triangle
     tutorial02.cpp
-    ../common/startScreen.cpp
-    ../common/LoadShaders.cpp
-    ../common/LoadShaders.h
-)
+    )
 target_link_libraries(tutorial02_red_triangle
+        common
         ${RPi_LIBS}
         ${GL_LIBS}
 )

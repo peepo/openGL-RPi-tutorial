@@ -6,7 +6,7 @@ Install necessary tools:
 
 Clone the repository:
 
-    git clone https://github.com/rktrlng/openGL-RPi-tutorial.git
+    git clone https://github.com/peepo/openGL-RPi-tutorial.git
 
 Build one of the examples:
 

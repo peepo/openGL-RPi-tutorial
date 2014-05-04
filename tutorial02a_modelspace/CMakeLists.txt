@@ -1,10 +1,8 @@
 add_executable(tutorial02a_modelspace
     tutorial02a.cpp
-    ../common/startScreen.cpp
-    ../common/LoadShaders.cpp
-    ../common/LoadShaders.h
 )
 target_link_libraries(tutorial02a_modelspace
+        common
         ${RPi_LIBS}
         ${GL_LIBS}
 )

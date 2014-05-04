@@ -8,7 +8,7 @@ include_directories(
     /opt/vc/include
     /opt/vc/include/interface/vcos/pthreads
     /opt/vc/include/interface/vmcs_host/linux
-    ${CMAKE_SOURCE_DIR}/libs/glm/
+#   ${CMAKE_SOURCE_DIR}/libs/glm/
     ${CMAKE_SOURCE_DIR}/libs/ilclient
     ${CMAKE_SOURCE_DIR}/common
 )

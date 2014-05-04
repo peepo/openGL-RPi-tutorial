@@ -1,5 +1,6 @@
 add_executable(tutorial05_gen_YUV_tex_disp
     tutorial05.cpp
+    ../common/cam_graphics.cpp
 )
 target_link_libraries(tutorial05_gen_YUV_tex_disp
         common

@@ -1,8 +1,8 @@
 add_executable(playground
     playground.cpp
-    ../common/startScreen.cpp
 )
 target_link_libraries(playground
+        common
         ${RPi_LIBS}
         ${GL_LIBS}
 )

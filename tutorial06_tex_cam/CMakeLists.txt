@@ -1,14 +1,9 @@
 # Tutorial 6 use camera as texture Chris Cummings
 add_executable(tutorial06_tex_cam
     tutorial06.cpp
-    ../common/camera.cpp
-    ../common/cameracontrol.cpp
-    ../common/graphics.cpp
-    #../common/startScreen.cpp
-    #../common/LoadShaders.cpp
-    #../common/LoadShaders.h
 )
 target_link_libraries(tutorial06_tex_cam
+        common
         ${RPi_LIBS}
         ${GL_LIBS}
         ${CAM_LIBS}

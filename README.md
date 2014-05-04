@@ -2,7 +2,7 @@ openGLES 2.0 tutorial for Raspberry Pi
 
 Install necessary tools:
 
-    sudo apt-get install git cmake
+    sudo apt-get install git cmake libglm-dev
 
 Clone the repository:
 

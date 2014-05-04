@@ -1,10 +1,8 @@
 add_executable(tutorial03_matrices
     tutorial03.cpp
-    ../common/startScreen.cpp
-    ../common/LoadShaders.cpp
-    ../common/LoadShaders.h
 )
 target_link_libraries(tutorial03_matrices
+        common
         ${RPi_LIBS}
         ${GL_LIBS}
 )

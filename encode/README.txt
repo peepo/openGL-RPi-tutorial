@@ -1,3 +1,3 @@
-./encode > test.h264
+./encode test.h264
 
 record YUV buffer direct to file

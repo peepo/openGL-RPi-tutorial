@@ -13,4 +13,4 @@ target_link_libraries(encode_OGL
         ${CAM_LIBS}
         ${ILC_LIBS}
 )
-set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
+set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT -lpthread -lm")

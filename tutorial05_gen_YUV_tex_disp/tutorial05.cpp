@@ -39,7 +39,7 @@ int main(int argc, const char **argv)
 		rgbtextures[0].GenerateFrameBuffer();
 		texture_grid[next_texture_grid_entry++] = &rgbtextures[0];
 	printf("Running frame loop\n");
-	for(int i = 0; i < 3000; i++)
+	for(int frame_cnt = 0; frame_cnt < 3000; frame_cnt++)
 	{
                 //spin until we have a camera frame
                 // removed

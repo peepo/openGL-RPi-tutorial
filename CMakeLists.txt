@@ -4,10 +4,23 @@ project ("openGLES 2.0 for Raspberry Pi tutorials")
 
 SET(COMPILE_DEFINITIONS -Werror)
 
+ if (CROSS_COMPILE)
+    message("Cross compilation mode enabled.")
+
+    # Some cmake systems has bug, and uses install rpath
+    # always, even while building
+    # (CMAKE_BUILD_RPATH is always equal to CMAKE_INSTALL_RPATH).
+    # In cross-compilation case such rpath would be wrong.
+    # E.g. we don't need rpath=/opt/vc/lib
+    # but we need rpath=${ROOTFS}/opt/vc/lib
+    # Currently the we just hardcode that linker flag.
+    SET(CMAKE_EXE_LINKER_FLAGS "-Wl,-rpath,${CMAKE_SOURCE_DIR}/libs/ilclient:${CMAKE_SYSROOT}/opt/vc/lib")
+endif(CROSS_COMPILE)
+
 include_directories(
-    /opt/vc/include
-    /opt/vc/include/interface/vcos/pthreads
-    /opt/vc/include/interface/vmcs_host/linux
+    ${CMAKE_SYSROOT}/opt/vc/include
+    ${CMAKE_SYSROOT}/opt/vc/include/interface/vcos/pthreads
+    ${CMAKE_SYSROOT}/opt/vc/include/interface/vmcs_host/linux
 #   ${CMAKE_SOURCE_DIR}/libs/glm/
     ${CMAKE_SOURCE_DIR}/libs/ilclient
     ${CMAKE_SOURCE_DIR}/common
@@ -15,7 +28,7 @@ include_directories(
 
 link_directories(
     ${CMAKE_SOURCE_DIR}/libs/ilclient
-    /opt/vc/lib
+    ${CMAKE_SYSROOT}/opt/vc/lib
 )
 
 

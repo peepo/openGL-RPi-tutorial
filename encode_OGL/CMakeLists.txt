@@ -12,5 +12,7 @@ target_link_libraries(encode_OGL
         ${GL_LIBS}
         ${CAM_LIBS}
         ${ILC_LIBS}
+        m
+        pthread
 )
-set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT -lpthread -lm")
+set (CMAKE_C_FLAGS "-DOMX_SKIP64BIT")
